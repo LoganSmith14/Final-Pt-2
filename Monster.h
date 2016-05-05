@@ -1,5 +1,5 @@
 #pragma once
-#include "entity.h"
+#include "Stuff.h"
 #include "Player.h"
 
 class Monster : public Entity {
