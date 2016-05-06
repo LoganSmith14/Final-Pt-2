@@ -23,8 +23,11 @@ int main(){
 		switch (selection){
 		case 1:
 			cout << "You have choosen to walk the maze." << endl;
+			continue;
 		case 2:
 			cout << "You have choosen to fight." << endl;
+			p.setHealth(20);
+			m.setHealth(20);
 			while (m.getHealth() > 0 && p.getHealth() > 0) {
 				if (p.hitBy(&m)) {
 					cout << "Player was hit by the monster for " << m.attack(&p) << endl;
@@ -50,6 +53,7 @@ int main(){
 			continue;
 		case 3:
 			cout << "You have choosen to run the maze while fighting monsters." << endl;
+			continue;
 		case 4:
 			cout << "Here are some photos for you to not enjoy." << endl;
 			cout << "***********************************************************" << endl;

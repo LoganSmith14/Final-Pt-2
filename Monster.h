@@ -4,9 +4,9 @@
 
 class Monster : public Entity {
 public:
-	Monster() {
+	/*Monster() {
 		setHealth(20);
-	}
+	}*/
 	bool hitBy(Entity *other) {
 		return getRandomBoolean();
 	}
